@@ -48,7 +48,12 @@ async function fun(p){
 //   console.log(random)
   let image=resp.results[random].urls.regular
   console.log(image)
-  document.body.style.backgroundImage=`url('${image}')`
+  document.body.setAttribute('class','class1')
+  document.body.style.background=`linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.3)),url('${image}')`
+  document.body.style.backgroundPosition="center"
+  document.body.style.backgroundRepeat="no-repeat"
+  document.body.style.height="100%"
+  document.body.style.backgroundSize="cover"
 //   document.body.style=''
 
   
@@ -81,10 +86,10 @@ function getdetails(p){
 }
 
 
-window.onload = () =>{
-img.src="https://i.pinimg.com/originals/77/0b/80/770b805d5c99c7931366c2e84e88f251.png"
-i.appendChild(img);
-}
+// window.onload = () =>{
+// img.src="https://i.pinimg.com/originals/77/0b/80/770b805d5c99c7931366c2e84e88f251.png"
+// i.appendChild(img);
+// }
 
     function get(response){
         
