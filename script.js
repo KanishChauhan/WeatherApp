@@ -86,10 +86,13 @@ function getdetails(p){
 }
 
 
-// window.onload = () =>{
-// img.src="https://i.pinimg.com/originals/77/0b/80/770b805d5c99c7931366c2e84e88f251.png"
-// i.appendChild(img);
-// }
+window.onload = () =>{
+    document.body.style.background="url('https://c1.wallpaperflare.com/preview/116/459/808/lake-sunset-water-landscape.jpg')"
+    document.body.style.backgroundPosition="center"
+    document.body.style.backgroundRepeat="no-repeat"
+    document.body.style.height="100%"
+    document.body.style.backgroundSize="cover"
+}
 
     function get(response){
         
@@ -99,9 +102,10 @@ function getdetails(p){
         // let t=document.getElementById('temp')
         // let t=document.getElementById('temp')
         
-        w.innerHTML=response.wind_speed +"km/h"
-        
-        t.innerHTML=response.temp
+        w.innerHTML=response.wind_speed +" km/h"
+        console.log(response)
+        t.innerHTML=response.temp+"°C"
+        h.innerHTML=response.humidity+"%"
         
         // let tmp=response.temp
         // t.innerHTML=tmp
@@ -109,7 +113,7 @@ function getdetails(p){
         // let tmp=response.temp
         // t.innerHTML=tmp
 
-        if(tmp>=40){
+        if(response.temp>=40){
             img.src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMgCoBzRyuv8-NCwfuoNkODrp1b6IE2v192uU02u8s4jBY6GMq&s";
             i.appendChild(img);
         }
@@ -117,7 +121,7 @@ function getdetails(p){
             img.src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBaQllKrwOeptbXwxuPJzfkpG8z1vTPSgqraWvvFZUrBq0hGFw&s";
             i.appendChild(img);
         }
-        if(tmp<10){
+        if(response.temp<10){
             img.src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTB-Q081wZEEBNIDgpwL-TB9crJWH-s4SnOatdblHSlvQXcCGA&s";
             i.appendChild(img);
         }
