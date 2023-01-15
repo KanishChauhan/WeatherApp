@@ -87,7 +87,7 @@ function getdetails(p){
 
 
 window.onload = () =>{
-    document.body.style.background="url('https://c1.wallpaperflare.com/preview/116/459/808/lake-sunset-water-landscape.jpg')"
+    document.body.style.background="url('https://images.pexels.com/photos/531880/pexels-photo-531880.jpeg?cs=srgb&dl=pexels-pixabay-531880.jpg&fm=jpg')"
     document.body.style.backgroundPosition="center"
     document.body.style.backgroundRepeat="no-repeat"
     document.body.style.height="100%"
@@ -131,6 +131,6 @@ window.onload = () =>{
    
 
 // console.log(response);
-let weather ={
-    'apikeys':'81c55f43d3d3fccbb7a13fd35ad6355c'
-}
+// let weather ={
+//     'apikeys':'81c55f43d3d3fccbb7a13fd35ad6355c'
+// }
