@@ -24,4 +24,24 @@ body:before{
     nav{
         height:70px;
         background-color:#404040;
+        display: grid;
     }
+
+    #wrapper {
+       background-image:url(background.jpg); ;
+        box-shadow: 1px 5px 25px 3px #444;
+        border-radius: 10px;
+      
+        /* margin: 100px auto;
+        max-width: 720px;
+        padding: 0px; */
+        color: white;  
+      
+        position:  relative;
+        box-shadow:0 5px 15px rgba(0,0,0,1);
+        background-color:rgba(255,255,255,0.1);
+      }
+
+
+
+   

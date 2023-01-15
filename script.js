@@ -48,12 +48,20 @@ async function fun(p){
 //   console.log(random)
   let image=resp.results[random].urls.regular
   console.log(image)
-  document.body.setAttribute('class','class1')
-  document.body.style.background=`linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.3)),url('${image}')`
-  document.body.style.backgroundPosition="center"
-  document.body.style.backgroundRepeat="no-repeat"
-  document.body.style.height="100%"
-  document.body.style.backgroundSize="cover"
+  let sec=document.getElementsByTagName('section')[0]
+  sec.setAttribute('class','class1')
+  sec.style.background=`linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.3)),url('${image}')`
+  sec.style.backgroundPosition="center"
+  sec.style.backgroundRepeat="no-repeat"
+  sec.style.height="643px"
+  sec.style.backgroundSize="cover"
+
+//   document.body.setAttribute('class','class1')
+//   document.body.style.background=`linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.3)),url('${image}')`
+//   document.body.style.backgroundPosition="center"
+//   document.body.style.backgroundRepeat="no-repeat"
+//   document.body.style.height="100%"
+//   document.body.style.backgroundSize="cover"
 //   document.body.style=''
 
   
@@ -106,6 +114,8 @@ window.onload = () =>{
         console.log(response)
         t.innerHTML=response.temp+"°C"
         h.innerHTML=response.humidity+"%"
+        
+        pr.innerHTML=response.cloud_pct+"%"
         
         // let tmp=response.temp
         // t.innerHTML=tmp
