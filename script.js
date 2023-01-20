@@ -123,18 +123,18 @@ window.onload = () =>{
         // let tmp=response.temp
         // t.innerHTML=tmp
 
-        if(response.temp>=40){
-            img.src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMgCoBzRyuv8-NCwfuoNkODrp1b6IE2v192uU02u8s4jBY6GMq&s";
-            i.appendChild(img);
-        }
-        if(response.wind_speed9=10){
-            img.src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBaQllKrwOeptbXwxuPJzfkpG8z1vTPSgqraWvvFZUrBq0hGFw&s";
-            i.appendChild(img);
-        }
-        if(response.temp<10){
-            img.src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTB-Q081wZEEBNIDgpwL-TB9crJWH-s4SnOatdblHSlvQXcCGA&s";
-            i.appendChild(img);
-        }
+        // if(response.temp>=40){
+        //     img.src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMgCoBzRyuv8-NCwfuoNkODrp1b6IE2v192uU02u8s4jBY6GMq&s";
+        //     i.appendChild(img);
+        // }
+        // if(response.wind_speed=10){
+        //     img.src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBaQllKrwOeptbXwxuPJzfkpG8z1vTPSgqraWvvFZUrBq0hGFw&s";
+        //     i.appendChild(img);
+        // }
+        // if(response.temp<10){
+        //     img.src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTB-Q081wZEEBNIDgpwL-TB9crJWH-s4SnOatdblHSlvQXcCGA&s";
+        //     i.appendChild(img);
+        // }
 
     }
 
